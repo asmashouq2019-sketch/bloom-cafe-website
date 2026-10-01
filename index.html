@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Cafe – Concept website for a neighbourhood cafe</title>
+  <meta name="description" content="Sample Cafe is a fictional cafe used as a concept / sample web design project. Menu, story, gallery and a front-end-only booking form.">
+  <meta name="theme-color" content="#3b2a20">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Sample Cafe home">
+        <img src="assets/favicon.svg" width="34" height="34" alt="" > <span>Sample Cafe</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu-nav" class="nav-links" aria-label="Primary">
+        <a href="#about">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-small" href="#book">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Neighbourhood coffee &amp; bakes</p>
+          <h1>Slow mornings, <em>good</em> coffee, warm bread.</h1>
+          <p class="lead">A fictional cafe built to show how a small business website can feel calm, fast and easy to use on every screen.</p>
+          <div class="cta-row">
+            <a class="btn" href="#book">Book a table</a>
+            <a class="btn btn-ghost" href="#menu">See the menu</a>
+          </div>
+          <ul class="hero-facts" aria-label="Opening summary">
+            <li><strong>Mon–Fri</strong> 7:30 – 17:00</li>
+            <li><strong>Sat–Sun</strong> 8:30 – 16:00</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 400" role="img" focusable="false">
+            <circle cx="200" cy="200" r="190" fill="#f6e3d6"/>
+            <circle cx="200" cy="200" r="140" fill="#f2b6a0" opacity=".55"/>
+            <ellipse cx="200" cy="318" rx="130" ry="18" fill="#3b2a20" opacity=".12"/>
+            <path d="M110 170h180v70a90 90 0 0 1-90 90 90 90 0 0 1-90-90z" fill="#fff"/>
+            <path d="M290 190h22a28 28 0 0 1 0 56h-30" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+            <path d="M118 176h164v22a82 82 0 0 1-164 0z" fill="#6b4630"/>
+            <path d="M150 190q30 18 60 0t50 0" fill="none" stroke="#f6e3d6" stroke-width="7" stroke-linecap="round"/>
+            <g fill="none" stroke="#3b2a20" stroke-width="7" stroke-linecap="round" opacity=".6">
+              <path d="M165 135q-14-20 0-38t0-34"/><path d="M205 135q-14-20 0-38t0-34"/><path d="M245 135q-14-20 0-38t0-34"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h2>A small room with a big table.</h2>
+          <p>Sample Cafe is imagined as an independent spot where regulars read, freelancers type and friends split a cinnamon bun. Everything on this page is placeholder content written for a design demo.</p>
+          <p>The layout focuses on what real visitors look for first: what is on the menu, when the doors open and how to reserve a seat.</p>
+        </div>
+        <ul class="values">
+          <li><span class="icon" aria-hidden="true">☕</span><div><h3>Small-batch coffee</h3><p>Single-origin beans, brewed by hand.</p></div></li>
+          <li><span class="icon" aria-hidden="true">🥐</span><div><h3>Baked each morning</h3><p>Pastries and loaves from the back oven.</p></div></li>
+          <li><span class="icon" aria-hidden="true">🌱</span><div><h3>Plant-friendly</h3><p>Dairy-free milks and vegan options.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Menu</p>
+          <h2>Something for every hour</h2>
+          <p>Sample items and sample prices only.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" class="tab" id="tab-coffee" aria-selected="true" aria-controls="panel-coffee">Coffee</button>
+          <button role="tab" class="tab" id="tab-bakery" aria-selected="false" aria-controls="panel-bakery" tabindex="-1">Bakery</button>
+          <button role="tab" class="tab" id="tab-brunch" aria-selected="false" aria-controls="panel-brunch" tabindex="-1">Brunch</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-coffee" aria-labelledby="tab-coffee">
+          <ul class="menu-list">
+            <li><div><h3>Espresso</h3><p>Rich, short and sweet.</p></div><span class="price">$3.00</span></li>
+            <li><div><h3>Flat white</h3><p>Double shot, silky milk.</p></div><span class="price">$4.50</span></li>
+            <li><div><h3>Honey oat latte</h3><p>Oat milk, local-style honey, cinnamon.</p></div><span class="price">$5.25</span></li>
+            <li><div><h3>Pour-over</h3><p>Single origin, changes weekly.</p></div><span class="price">$5.00</span></li>
+            <li><div><h3>Iced cold brew</h3><p>Steeped 18 hours, served over ice.</p></div><span class="price">$4.75</span></li>
+            <li><div><h3>Hot chocolate</h3><p>Dark cocoa, whipped cream optional.</p></div><span class="price">$4.50</span></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-bakery" aria-labelledby="tab-bakery" hidden>
+          <ul class="menu-list">
+            <li><div><h3>Butter croissant</h3><p>Flaky, golden, still warm.</p></div><span class="price">$3.75</span></li>
+            <li><div><h3>Cinnamon bun</h3><p>Brown sugar glaze. <span class="tag">Vegan</span></p></div><span class="price">$4.25</span></li>
+            <li><div><h3>Blueberry muffin</h3><p>Baked with oat crumble.</p></div><span class="price">$3.50</span></li>
+            <li><div><h3>Sourdough slice</h3><p>With butter and jam.</p></div><span class="price">$3.25</span></li>
+            <li><div><h3>Lemon loaf</h3><p>Citrus drizzle, soft crumb.</p></div><span class="price">$3.95</span></li>
+            <li><div><h3>Almond cookie</h3><p>Chewy centre. <span class="tag">Gluten-free</span></p></div><span class="price">$2.95</span></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-brunch" aria-labelledby="tab-brunch" hidden>
+          <ul class="menu-list">
+            <li><div><h3>Avocado toast</h3><p>Sourdough, lime, chilli flakes. <span class="tag">Vegan</span></p></div><span class="price">$9.50</span></li>
+            <li><div><h3>Egg &amp; cheese roll</h3><p>Soft scramble, cheddar, house relish.</p></div><span class="price">$7.95</span></li>
+            <li><div><h3>Granola bowl</h3><p>Yoghurt, seasonal fruit, honey.</p></div><span class="price">$8.25</span></li>
+            <li><div><h3>Veggie shakshuka</h3><p>Tomato, peppers, baked egg, toast.</p></div><span class="price">$11.00</span></li>
+            <li><div><h3>Soup of the day</h3><p>With a bread roll.</p></div><span class="price">$7.50</span></li>
+            <li><div><h3>Pancake stack</h3><p>Maple syrup and berries.</p></div><span class="price">$10.50</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2>A look inside (illustrated)</h2>
+          <p>Illustrations drawn with SVG shapes – no photos used.</p>
+        </div>
+        <div class="gallery">
+          <figure class="g1"><svg viewBox="0 0 300 220" role="img" aria-label="Illustration of a latte cup"><rect width="300" height="220" fill="#f6e3d6"/><ellipse cx="150" cy="170" rx="90" ry="14" fill="#3b2a20" opacity=".12"/><path d="M95 80h110v40a55 55 0 0 1-110 0z" fill="#fff"/><ellipse cx="150" cy="82" rx="55" ry="10" fill="#6b4630"/><path d="M205 92h12a16 16 0 0 1 0 32h-18" fill="none" stroke="#fff" stroke-width="9"/></svg><figcaption>Latte art</figcaption></figure>
+          <figure class="g2"><svg viewBox="0 0 300 220" role="img" aria-label="Illustration of a croissant"><rect width="300" height="220" fill="#f2d6a2"/><path d="M60 140q10-60 90-60t90 60q-20 10-40-6-20 16-50 16t-50-16q-20 16-40 6z" fill="#d98f45"/><path d="M110 92l10 50M150 84v62M190 92l-10 50" stroke="#a9622a" stroke-width="5" stroke-linecap="round"/></svg><figcaption>Fresh bakes</figcaption></figure>
+          <figure class="g3"><svg viewBox="0 0 300 220" role="img" aria-label="Illustration of a plant on a shelf"><rect width="300" height="220" fill="#d7e6d0"/><rect x="60" y="150" width="180" height="10" rx="3" fill="#6b4630"/><path d="M120 150l8-40h44l8 40z" fill="#c9764f"/><path d="M150 110q-40-20-30-60 36 10 30 60zM150 110q40-20 30-60-36 10-30 60zM150 110V40" fill="#4d8b55" stroke="#2f6a3a" stroke-width="3"/></svg><figcaption>Green corners</figcaption></figure>
+          <figure class="g4"><svg viewBox="0 0 300 220" role="img" aria-label="Illustration of a cafe table with two chairs"><rect width="300" height="220" fill="#f2b6a0"/><ellipse cx="150" cy="100" rx="70" ry="14" fill="#6b4630"/><rect x="145" y="104" width="10" height="70" fill="#3b2a20"/><rect x="108" y="172" width="84" height="8" rx="4" fill="#3b2a20"/><rect x="40" y="110" width="40" height="8" rx="3" fill="#3b2a20"/><rect x="44" y="118" width="6" height="56" fill="#3b2a20"/><rect x="220" y="110" width="40" height="8" rx="3" fill="#3b2a20"/><rect x="250" y="118" width="6" height="56" fill="#3b2a20"/></svg><figcaption>Cosy seating</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="book">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Reservations</p>
+          <h2>Book a table</h2>
+          <p>This form is a <strong>front-end demo</strong>. It validates input in the browser and shows a confirmation, but nothing is sent or stored anywhere.</p>
+          <ul class="checks">
+            <li>Instant on-screen confirmation</li>
+            <li>Accessible labels and error messages</li>
+            <li>Works with keyboard and screen readers</li>
+          </ul>
+        </div>
+        <form id="booking-form" class="card form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="err-name" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="error" id="err-email" role="alert"></p>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required>
+              <p class="error" id="err-date" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="">Select…</option>
+                <option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option>
+                <option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option>
+              </select>
+              <p class="error" id="err-time" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="notes">Notes <span class="muted">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <button class="btn btn-block" type="submit">Request booking</button>
+          <p id="form-success" class="success" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="visit">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2>Find us</h2>
+          <address>
+            123 Example Street<br>Sampletown, ST 00000<br>
+            <span class="muted">(fictional address)</span>
+          </address>
+          <table class="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday – Friday</th><td>7:30 – 17:00</td></tr>
+              <tr><th scope="row">Saturday</th><td>8:30 – 16:00</td></tr>
+              <tr><th scope="row">Sunday</th><td>8:30 – 16:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="map" role="img" aria-label="Illustrated map placeholder">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="#eef0e4"/><g stroke="#fff" stroke-width="14" fill="none"><path d="M-10 90 L410 130"/><path d="M120 -10 L160 310"/><path d="M-10 230 L410 200"/><path d="M300 -10 L270 310"/></g><rect x="190" y="95" width="50" height="40" fill="#cfe0c0"/><rect x="30" y="150" width="70" height="50" fill="#cfe0c0"/><path d="M200 120c0-18 26-18 26 0 0 14-13 28-13 28s-13-14-13-28z" fill="#c9764f"/><circle cx="213" cy="119" r="5" fill="#fff"/></svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="logo-text">Sample Cafe</p>
+        <p class="muted-light">123 Example Street, Sampletown (fictional)</p>
+      </div>
+      <p class="concept-note"><strong>Concept / sample project.</strong> This website is a self-made demo for portfolio purposes. Sample Cafe is not a real business; the menu, prices and address are placeholders and the booking form does not send data.</p>
+    </div>
+  </footer>
+</body>
+</html>
